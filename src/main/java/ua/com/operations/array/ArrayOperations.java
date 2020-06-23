@@ -40,8 +40,7 @@ public class ArrayOperations {
                maxElementOfArray = arraysWithRandomNubmers[i];
             }
         }
-        System.out.print(maxElementOfArray);
-        System.out.println();
+        System.out.println(maxElementOfArray);
     }
 
     public static void printSortAscending() {
