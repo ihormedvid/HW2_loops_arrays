@@ -5,7 +5,7 @@ import ua.com.operations.array.MatrixOperation;
 public class Main {
     public static void main(String[] args) {
         ArrayOperations.printAllMethods();
-//        MatrixOperation.matrixArray();
-//        ActionsWithArray.printChangeZero();
+        MatrixOperation.matrixArray();
+        ActionsWithArray.printChangeZero();
     }
 }
