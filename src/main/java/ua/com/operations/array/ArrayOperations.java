@@ -9,7 +9,7 @@ public class ArrayOperations {
 
     public static void printCrateRandomNumber() {
         System.out.println("Crate Arrays with randoms Number: ");
-        for (int i = 0; i < arraysWithRandomNubmers.length; i++) {
+        for (int i: arraysWithRandomNubmers) {
             arraysWithRandomNubmers[i] = (int) (Math.random() * 100);
             System.out.print(arraysWithRandomNubmers[i] + " ");
         }
@@ -21,9 +21,9 @@ public class ArrayOperations {
         int minElementOfArray = arraysWithRandomNubmers[0] + 1;
         System.out.print("Find Minimum Element of Array: ");
 
-        for (int min = 0; min < arraysWithRandomNubmers.length; min++) {
-            if (arraysWithRandomNubmers[min] < minElementOfArray) {
-                minElementOfArray = arraysWithRandomNubmers[min];
+        for (int i: arraysWithRandomNubmers) {
+            if (arraysWithRandomNubmers[i] < minElementOfArray) {
+                minElementOfArray = arraysWithRandomNubmers[i];
             }
         }
         System.out.print(minElementOfArray);
@@ -35,9 +35,9 @@ public class ArrayOperations {
         int maxElementOfArray = arraysWithRandomNubmers[0] + 1;
         System.out.print("Find Maximum Element of Array: ");
 
-        for (int max = 0; max < arraysWithRandomNubmers.length; max++) {
-            if (arraysWithRandomNubmers[max] > maxElementOfArray) {
-                maxElementOfArray = arraysWithRandomNubmers[max];
+        for (int i:arraysWithRandomNubmers) {
+            if (arraysWithRandomNubmers[i] > maxElementOfArray) {
+               maxElementOfArray = arraysWithRandomNubmers[i];
             }
         }
         System.out.print(maxElementOfArray);
@@ -48,7 +48,8 @@ public class ArrayOperations {
         System.out.println();
         System.out.println("Sort Ascending: ");
         Arrays.sort(arraysWithRandomNubmers);
-        for (int i = 0; i < arraysWithRandomNubmers.length; i++) {
+
+        for (int i:arraysWithRandomNubmers) {
             System.out.print(arraysWithRandomNubmers[i] + " ");
         }
     }
@@ -69,8 +70,8 @@ public class ArrayOperations {
     public static void printArraySum() {
         System.out.println();
         int result = 0;
-        for (int sum = 0; sum < arraysWithRandomNubmers.length; sum++) {
-            result += arraysWithRandomNubmers[sum];
+        for (int i:arraysWithRandomNubmers) {
+            result += arraysWithRandomNubmers[i];
         }
         System.out.println("Sum is " + result);
     }
@@ -78,9 +79,9 @@ public class ArrayOperations {
     public static void printArraySquare() {
         System.out.println();
         System.out.println("Arrays Element Square: ");
-        for (int sqr = 0; sqr < arraysWithRandomNubmers.length; sqr++) {
-            arraysWithRandomNubmers[sqr] = (int) Math.pow(arraysWithRandomNubmers[sqr], 2);
-            System.out.print(arraysWithRandomNubmers[sqr] + " ");
+        for (int i:arraysWithRandomNubmers) {
+            arraysWithRandomNubmers[i] = (int) Math.pow(arraysWithRandomNubmers[i], 2);
+            System.out.print(arraysWithRandomNubmers[i] + " ");
         }
     }
 
